@@ -11,7 +11,11 @@
       name="keywords"
       content="eLab, diagnostic software, laboratory management, Tru-Solutions, health care software, medical reporting, pathology software, lab solutions, healthcare technology"
     />
-    <link rel="author" href="http://www.tru-solutions.com" title="Team Tru-Solutions" />
+    <link
+      rel="author"
+      href="http://www.tru-solutions.com"
+      title="Team Tru-Solutions"
+    />
     <meta name="author" content="Tru-Solutions" />
     <link rel="canonical" href="http://www.elab.in/" />
 
@@ -25,10 +29,7 @@
     />
     <meta property="og:url" content="http://www.tru-solutions.com/" />
     <meta property="og:site_name" content="Tru-Solutions" />
-    <meta
-      property="og:image"
-      content="http://www.tru-solutions.com/"
-    />
+    <meta property="og:image" content="http://www.tru-solutions.com/" />
     <meta property="og:type" content="website" />
     <meta itemprop="name" content="eLab Pathology Software by Tru-Solutions" />
     <meta
@@ -44,6 +45,15 @@
 
     <!-- OWN css  -->
     <link rel="stylesheet" href="css/custom.css" />
+
+    <!-- Font-Awesome CDN  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css"
+      integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
 
   <body>
@@ -65,7 +75,9 @@
           </div>
           <div class="col-2">
             <a href="#">
-              <div class="header-btn">Download Now</div>
+              <div class="header-btn d-flex gap-2 align-items-center">
+                Download Now <i class="fa-solid fa-download"></i>
+              </div>
             </a>
           </div>
         </div>
@@ -87,7 +99,9 @@
             </div>
             <div class="banner-btn-container d-flex align-items-center gap-4">
               <a href="">
-                <div class="banner-btn-1">Download Now</div>
+                <div class="banner-btn-1 d-flex gap-2 align-items-center">
+                  Download Now <i class="fa-solid fa-download"></i>
+                </div>
               </a>
               <a
                 href="https://www.youtube.com/watch?v=X4HPYZvvZeU&list=PL75zRD59LSddWeuzcS3yb9ofNl8P3r0rK"
@@ -98,7 +112,7 @@
                   <img
                     src="images/play.png"
                     class="img-fluid banner-play-icon"
-                    alt=""
+                    alt="Watch Video Icon"
                   />
                 </div>
               </a>
@@ -108,11 +122,11 @@
             >
               <div>
                 <img src="images/check.png" class="pe-1" alt="" />
-                Free Register
+                Free Trial
               </div>
               <div>
                 <img src="images/check.png" class="pe-1" alt="" />
-                Great Services
+                Great Features
               </div>
               <div>
                 <img src="images/check.png" class="pe-1" alt="" />
@@ -121,7 +135,7 @@
             </div>
           </div>
           <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-            <img src="" class="img-fluid" alt="" />
+            <img src="./images/hero-section-image.svg" class="img-fluid" alt="" />
           </div>
         </div>
       </div>
@@ -132,9 +146,9 @@
           <div class="common-btn">Features</div>
         </div>
         <div class="d-flex justify-content-center pt-3 pb-5">
-          <div class="features-main-heading text-center">
+          <h2 class="features-main-heading text-center">
             Innovative Features to Maximize Your Performance
-          </div>
+          </h2>
         </div>
         <div class="row">
           <div class="col-lg-4 col-md-4 col-sm-12 col-12">
@@ -144,10 +158,10 @@
                 class="img-fluid"
                 alt=""
               />
-              <div class="features-heading">Easy-to-use</div>
+              <h3 class="features-heading">Automated Report Generation</h3>
               <div class="features-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Similique odio odit cum soluta corporis nesciunt?
+                Quickly create professional, customizable pathology reports with
+                accuracy and zero errors, saving time and effort.
               </div>
               <div class="features-link">Learn More</div>
             </div>
@@ -159,10 +173,12 @@
                 class="img-fluid"
                 alt=""
               />
-              <div class="features-heading">Total Customised</div>
+              <h3 class="features-heading">
+                Centralized Patient & Test Data
+              </h3>
               <div class="features-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Similique odio odit cum soluta corporis nesciunt?
+                Manage all patient information and test records in a single,
+                secure system, ensuring quick access and streamlined workflows.
               </div>
               <div class="features-link">Learn More</div>
             </div>
@@ -174,10 +190,10 @@
                 class="img-fluid"
                 alt=""
               />
-              <div class="features-heading">Multi-user</div>
+              <h3 class="features-heading">Easy-to-Use</h3>
               <div class="features-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Similique odio odit cum soluta corporis nesciunt?
+                Designed with simplicity and efficiency in mind, ensuring a
+                smooth and intuitive user experience for everyone.
               </div>
               <div class="features-link">Learn More</div>
             </div>
@@ -383,7 +399,13 @@
                 soluta, libero similique facere vel.
               </div>
               <div class="fs-5 py-3 fw-semibold">Accepted Payment Methods</div>
-              <div class="img-container"></div>
+              <div class="img-container">
+                <img class="payment-mode-logo" src="./images/payment-methods/rupay.svg" alt="" />
+                <img class="payment-mode-logo" src="./images/payment-methods/visa.svg" alt="" />
+                <img class="payment-mode-logo" src="./images/payment-methods/mastercard.svg" alt="" />
+                <img class="payment-mode-logo" src="./images/payment-methods/upi.svg" alt="" />
+                <!-- <img class="payment-mode-logo" src="./images/payment-methods/american-express.svg" alt="" /> -->
+              </div>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 col-sm-12 col-12">
