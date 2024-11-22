@@ -7,7 +7,7 @@
   font-family: "Poppins", sans-serif;
 }
 
-::selection{
+::selection {
   background-color: #3c1cff;
   color: #fff;
 }
@@ -27,7 +27,7 @@ a {
   text-decoration: none;
 }
 
-.common-btn{
+.common-btn {
   padding: 17px 34px;
   border-radius: 27px;
   background: #f0ecff;
@@ -58,7 +58,7 @@ a {
 .pos-fixed {
   position: sticky;
   background-color: #fff;
-  box-shadow: 0px 10px 16px -11px rgba(0,0,0,0.75);
+  box-shadow: 0px 10px 16px -11px rgba(0, 0, 0, 0.75);
 }
 
 @keyframes slideDown {
@@ -85,7 +85,7 @@ a {
 
 .header-btn {
   text-align: center;
-  padding: 17px 34px;
+  padding: 17px 22px;
   border-radius: 27px;
   background: #5236ff;
   cursor: pointer;
@@ -104,6 +104,20 @@ a {
   background-color: #151b8b;
 }
 
+.d-none {
+  display: none;
+}
+.d-block {
+  display: block;
+}
+.pos-fixed {
+  top: 0;
+  z-index: 1000;
+}
+.animate {
+  transition: all 0.3s ease-in-out;
+}
+
 /* banner area css here  */
 .banner {
   padding: 100px 0;
@@ -113,12 +127,12 @@ a {
   font-weight: bold;
   line-height: 1.2;
 }
-.banner-text{
+.banner-text {
   font-size: 15px;
   color: #757575;
   padding: 20px 0;
 }
-.banner-btn-1{
+.banner-btn-1 {
   padding: 17px 34px;
   border-radius: 27px;
   background: #3734a9;
@@ -135,7 +149,7 @@ a {
   -o-transition: all 0.8s linear; /* Opera */
   -ms-transition: all 0.8s linear;
 }
-.banner-btn-2{
+.banner-btn-2 {
   padding: 17px 34px;
   border-radius: 27px;
   background: #f4f4f4;
@@ -153,45 +167,45 @@ a {
   -ms-transition: all 0.8s linear;
 }
 
-.banner-checkbox-container{
+.banner-checkbox-container {
   color: #5236ff;
   font-size: 14px;
 }
 
 /* cost-effect css here */
-.cost-effect{
+.cost-effect {
   margin: 50px 0 100px;
 }
-.cost-effect-main-container{
+.cost-effect-main-container {
   padding: 70px 30px;
   background-color: #f7f7f7;
   border-radius: 50px;
 }
-.cost-effect-heading{
+.cost-effect-heading {
   font-size: 38px;
   font-weight: bold;
   line-height: 1;
 }
-.cost-effect-text{
+.cost-effect-text {
   font-size: 15px;
   padding: 20px 0;
   color: #8a8a8c;
 }
-.cost-effect-sub-heading{
+.cost-effect-sub-heading {
   font-size: 22px;
   font-weight: 600;
 }
-.cost-effect-sub-text{
+.cost-effect-sub-text {
   font-size: 15px;
   padding: 5px 0;
   color: #8a8a8c;
 }
 
 /* how-it-work  section css here*/
-.how-it-work{
+.how-it-work {
   margin: 100px 0;
 }
-.work-container{
+.work-container {
   background-color: #f9f9f9;
   color: #000000;
   padding: 20px 0 20px 30px;
@@ -203,23 +217,23 @@ a {
   font-weight: bold;
   transition: all 0.5s ease;
 }
-.nav-tabs .active{
+.nav-tabs .active {
   background-color: #5236ff;
-    color: #fff;
+  color: #fff;
 }
 .nav-tabs {
   border-bottom: 0;
 }
-.how-it-work .works-content-heading{
+.how-it-work .works-content-heading {
   font-size: 30px;
   font-weight: 600;
   line-height: 1.2;
 }
-.how-it-work  .works-content-text {
+.how-it-work .works-content-text {
   font-size: 15px;
   color: #9f9f9f;
 }
-.how-it-work-btn{
+.how-it-work-btn {
   width: fit-content;
   padding: 17px 34px;
   border-radius: 27px;
@@ -230,25 +244,25 @@ a {
   position: relative;
   transition: all 0.3s linear;
 }
-.how-it-work-btn:hover{
+.how-it-work-btn:hover {
   background-color: #5236ff;
 }
 
 /* features css here  */
-.features{
+.features {
   padding: 10px 0 100px;
 }
-.features-heading{
+.features-heading {
   text-align: center;
   font-size: 22px;
   font-weight: 600;
   padding: 20px 0;
 }
-.features-text{
+.features-text {
   text-align: center;
   font-size: 15px;
 }
-.features-link{
+.features-link {
   font-size: 14px;
   text-align: center;
   text-decoration: underline;
@@ -256,15 +270,15 @@ a {
   cursor: pointer;
   font-weight: 500;
 }
-.features-card-container{
+.features-card-container {
   min-height: 100%;
   padding: 0 10px;
 }
-.features-card_active_container{
+.features-card_active_container {
   background-color: #f7f7f7;
   border-radius: 0 0 20px 20px;
 }
-.features-card_active_container .features-link{
+.features-card_active_container .features-link {
   color: #5236ff;
 }
 .features-btn {
@@ -281,36 +295,36 @@ a {
 }
 
 /* pricing css here  */
-.pricing{
+.pricing {
   padding: 10px 0 100px;
 }
 
-.pricing-heading{
+.pricing-heading {
   line-height: 1.2;
   padding: 20px 0;
 }
-.pricing-text{
+.pricing-text {
   font-size: 14px;
   color: #9f9f9f;
 }
-.pricing .img-container{
+.pricing .img-container {
   padding: 20px;
   background-color: #f9f9f9;
 }
 
-.payment-mode-logo{
+.payment-mode-logo {
   justify-content: center;
   height: 50px;
   gap: 10px;
   display: inline;
 }
 
-.pricing-card{
+.pricing-card {
   padding: 40px 25px;
   background-color: #f9f9f9;
   border-radius: 20px;
 }
-.pricing-card-heading-btn-1{
+.pricing-card-heading-btn-1 {
   background-color: #fff;
   padding: 10px 20px;
   border-radius: 20px;
@@ -318,7 +332,7 @@ a {
   font-size: 14px;
   font-weight: 500;
 }
-.pricing-card-heading-btn-2{
+.pricing-card-heading-btn-2 {
   background-color: #f0ecff;
   padding: 10px 20px;
   border-radius: 20px;
@@ -326,33 +340,33 @@ a {
   font-size: 14px;
   font-weight: 600;
 }
-.pricing-price{
+.pricing-price {
   font-size: 26px;
   font-weight: bold;
 }
-.pricing-price .pricing-price-month{
+.pricing-price .pricing-price-month {
   font-size: 12px;
   margin-top: 4px;
 }
-.pricing-year-btn{
+.pricing-year-btn {
   background-color: #dfdbfb;
   color: #3620c9;
   padding: 10px 20px;
   border-radius: 20px;
   width: fit-content;
 }
-.pricing-card ul li{
+.pricing-card ul li {
   color: #9f9f9f;
   font-size: 15px;
   padding-bottom: 20px;
 }
-.pricing-card ul li strong{
+.pricing-card ul li strong {
   color: #000;
 }
-.pricing-card-2 ul li strong{
+.pricing-card-2 ul li strong {
   color: #3c1cff;
 }
-.pricing-card .pricing-btn{
+.pricing-card .pricing-btn {
   width: fit-content;
   padding: 17px 34px;
   border-radius: 27px;
@@ -364,7 +378,7 @@ a {
   position: relative;
   transition: all 0.3s linear;
 }
-.pricing-card-2 .pricing-btn{
+.pricing-card-2 .pricing-btn {
   width: fit-content;
   padding: 17px 34px;
   border-radius: 27px;
@@ -376,105 +390,103 @@ a {
   position: relative;
   transition: all 0.3s linear;
 }
-.pricing-card-2 .pricing-btn:hover{
+.pricing-card-2 .pricing-btn:hover {
   background-color: #fff;
   color: #000;
 }
-.pricing-btn:hover{
+.pricing-btn:hover {
   background-color: #000;
   color: #fff;
 }
 
 /* free-trial section css gere */
-.free-trial{
+.free-trial {
   margin-bottom: 100px;
 }
-.free-trial-container{
+.free-trial-container {
   background: linear-gradient(90deg, #684fff 0%, #ab6afe 100%);
   padding: 30px;
   border-radius: 20px;
 }
-.free-trial-heading{
+.free-trial-heading {
   line-height: 1.2;
 }
-.free-trial-text{
+.free-trial-text {
   font-size: 15px;
   color: #f0f0f0;
 }
-.free-trial-input{
+.free-trial-input {
   padding: 17px 34px;
   border-radius: 30px;
   border: 0;
   background-color: #9178ff;
 }
-.free-trial-input::placeholder{
+.free-trial-input::placeholder {
   color: #fff;
 }
 
-.free-trial-input:focus{
+.free-trial-input:focus {
   border: 0;
 }
 
 /* blog css here */
-.blog{
+.blog {
   margin-bottom: 100px;
 }
-.blog-card{
+.blog-card {
   background-color: #f9f9f9;
   padding: 20px 30px 40px;
   border-radius: 30px;
 }
-.card-date{
+.card-date {
   font-size: 14px;
   color: #8a8a8c;
   padding-top: 20px;
 }
-.card-heading{
+.card-heading {
   font-size: 26px;
   line-height: 1.2;
   padding: 20px 0;
   font-weight: 600;
 }
-.card-text{
+.card-text {
   font-size: 15px;
   color: #8a8a8c;
   padding-bottom: 25px;
 }
-.card-link a{
+.card-link a {
   font-size: 14px;
   color: #3c1cff;
   text-decoration: underline;
   font-weight: 500;
 }
 
-hr{
+hr {
   color: #8a8a8c;
   margin-bottom: 100px;
 }
 
 /* footer */
-.footer {
-}
 .footer .pad-bottom {
   padding-bottom: 50px;
 }
-.f-logo{
+.f-logo {
   font-size: 22px;
 }
 
-.f-text{
-  font-size: 15px ;
+.f-text {
+  font-size: 15px;
   padding: 20px 0;
   padding-right: 20px;
-  color: #8a8a8c;
+  color: #575757;
 }
-.fs-14 a{
+.fs-14 a {
   font-size: 15px;
-  color: #8a8a8c;
+  color: #575757;
 }
 
-.f-heading{
-  font-size: 26px;
+.f-heading {
+  font-size: 22px;
   font-weight: 600;
   padding-bottom: 10px;
   border-bottom: 1px solid;
@@ -484,10 +496,9 @@ footer ul li {
   padding-bottom: 15px;
 }
 
-footer ul li a{
-  color: #8a8a8c;
+footer ul li a {
+  color: #575757;
 }
-
 
 .f-div-2 {
   margin-left: -25px;
@@ -514,20 +525,20 @@ footer ul li a{
   font-weight: 600;
 }
 .footer-container-text {
-  color: #8a8a8c;
+  color: #575757;
   padding-bottom: 20px;
   font-size: 15px;
 }
-.footer-btn-container{
+.footer-btn-container {
   display: flex;
   gap: 10px;
   align-items: center;
 }
 .footer-btn-1 {
   padding: 15px 30px;
-  background-color: #303030;
+  background-color: #212121;
   border-radius: 27px;
-  border: 1px solid #303030;
+  border: 1px solid #212121;
   color: #fff;
 }
 .footer-btn-2 {
