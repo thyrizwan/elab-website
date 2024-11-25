@@ -1,0 +1,167 @@
+@media only screen and (min-width: 320px) and (max-width: 1023px) {
+}
+
+@media only screen and (min-width: 321px) and (max-width: 480px) {
+  .banner-heading {
+    font-size: 26px;
+  }
+  .banner {
+    padding: 50px 0 100px;
+  }
+  .banner-checkbox-container {
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+  }
+  .features-main-heading {
+    font-size: 26px;
+    width: 100%;
+  }
+  .cost-effect-heading {
+    font-size: 26px;
+  }
+  .tab-content .gap-3 {
+    gap: 0 !important;
+  }
+  .how-it-work .works-content-heading {
+    font-size: 26px;
+  }
+  .how-it-work .works-content-text {
+    color: #575757;
+  }
+  .free-trial-input {
+    width: 100%;
+  }
+  .free-trial .pe-5 {
+    padding-right: 0rem !important;
+  }
+  .f-div-2 {
+    margin-left: 0;
+    margin-top: 15px;
+    margin-left: 15px;
+  }
+  .f-div-1 {
+    margin-left: 15px;
+  }
+  .f-div-3 {
+    margin-top: 15px;
+  }
+  .footer-btn-container {
+    flex-direction: column;
+  }
+  .footer-btn-container a {
+    width: 100%;
+  }
+  .lower-footer {
+    text-align: center;
+  }
+  .footer-social-media-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .free-trial-br {
+    display: none;
+  }
+  .mobile-menu {
+    top: 70px;
+  }
+
+  .contact-page .contact-page-top-container {
+    flex-direction: column;
+  }
+  .contact-page-heading {
+    font-size: 35px;
+    text-align: center;
+    font-weight: bold;
+  }
+  .contact-page .top-container {
+    gap: 0;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  .contact-page .main-form-container {
+    padding: 35px 20px;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait) {
+}
+
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation: portrait) {
+}
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .banner-heading {
+    font-size: 30px;
+  }
+  .banner-checkbox-container {
+    margin-bottom: 35px;
+  }
+  .features-main-heading {
+    font-size: 30px;
+    width: 100%;
+  }
+  .features-heading {
+    font-size: 20px;
+  }
+  .cost-effect-heading {
+    font-size: 27px;
+  }
+  .cost-effect-text {
+    font-size: 14px;
+  }
+  .how-it-work .works-content-heading {
+    font-size: 26px;
+  }
+  .how-it-work .works-content-text {
+    font-size: 14px;
+  }
+  .free-trial-br {
+    display: none;
+  }
+  .free-trial-input {
+    width: 100%;
+  }
+  .f-div-2 {
+    margin-left: 0;
+    margin-top: 15px;
+  }
+  .f-div-3 {
+    margin-left: 0;
+    margin-top: 15px;
+  }
+  .f-div-4 {
+    margin-left: 0;
+    margin-top: 15px;
+  }
+  .footer-btn-container {
+    flex-direction: column;
+  }
+  .footer-btn-container a {
+    width: 100%;
+  }
+  .footer .mt-3 {
+    margin-top: 0 !important;
+  }
+  .footer-social-media-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .contact-page-heading {
+    font-size: 46px;
+  }
+  .contact-page .top-container {
+    gap: 31px;
+  }
+  .contact-page .main-form-container {
+    padding: 35px 25px;
+  }
+}

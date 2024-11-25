@@ -5,9 +5,11 @@ document.addEventListener("DOMContentLoaded", function () {
         let downloadBtn = document.getElementById("download-btn");
         let contactNo = document.getElementById("contact-no");
         let mainHeader = document.querySelector(".main-header");
+        const mobileMenu = document.querySelector('.mobile-menu');
 
         if (scroll >= 60) {
             mainHeader.classList.add("animate", "pos-fixed");
+            mobileMenu.classList.remove("active");
             scroll_top?.classList.add("d-block");
             scroll_top?.classList.remove("d-none");
             downloadBtn.classList.remove("d-none");
@@ -29,4 +31,10 @@ document.addEventListener("DOMContentLoaded", function () {
 function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
+}
+
+
+function toggleMenu() {
+    const mobileMenu = document.querySelector('.mobile-menu');
+    mobileMenu.classList.toggle('active');
 }

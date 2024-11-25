@@ -45,6 +45,7 @@
 
     <!-- OWN css  -->
     <link rel="stylesheet" href="css/custom.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
 
     <!-- Font-Awesome CDN  -->
     <link
@@ -59,18 +60,17 @@
   <body>
     <div class="main-header">
       <div class="container">
-        <div class="row align-items-center">
-          <div class="col-2">
-            <img src="images/logo.png" alt="" />
+        <div class="row align-items-center justify-content-between">
+          <div class="col-lg-2 col-md-4 col-sm-4 col-4">
+            <img src="images/logo.svg" alt="" />
           </div>
-          <div class="col-8 px-5">
-            <ul class="d-none d-lg-flex">
+          <div class="col-lg-8 px-5 header-link-container d-none d-lg-block">
+            <ul class="">
               <a href="./index.html"><li class="header-links">Home</li></a>
               <a href="./features.html"
                 ><li class="header-links">Features</li></a
               >
               <a href="./price.html"><li class="header-links">Price</li></a>
-              <!-- <a href="#"><li class="header-links">Blog</li></a> -->
               <a href="./about-us.html"
                 ><li class="header-links">About Us</li></a
               >
@@ -79,25 +79,124 @@
               >
             </ul>
           </div>
-          <div class="col-2">
-            <a href="#" id="download-btn" class="d-none">
-              <div class="header-btn d-flex gap-2 align-items-center">
-                Download Now <i class="fa-solid fa-download"></i>
-              </div>
-            </a>
-            <a href="tel:+917432074320" id="contact-no" class="d-block">
-              <div class="header-btn d-flex gap-2 align-items-center">
-                <i class="fa-solid fa-phone"></i> +91 74320 74320
-              </div>
-            </a>
+          <div
+            class="col-lg-2 col-md-6 col-sm-2 col-1 px-0 d-md-flex align-items-center justify-content-end gap-4"
+          >
+            <div class="header-top-btn-contraner d-none d-md-block">
+              <a href="#" id="download-btn" class="d-none">
+                <div class="header-btn d-flex gap-2 align-items-center">
+                  Download Now <i class="fa-solid fa-download"></i>
+                </div>
+              </a>
+              <a href="tel:+917432074320" id="contact-no" class="d-block">
+                <div class="header-btn d-flex gap-2 align-items-center">
+                  <i class="fa-solid fa-phone"></i> +91 74320 74320
+                </div>
+              </a>
+            </div>
+            <div class="toggle-btn d-lg-none" onclick="toggleMenu()">
+              <i class="fa-solid fa-bars fa-xl"></i>
+            </div>
           </div>
         </div>
       </div>
     </div>
+    <div class="mobile-menu d-lg-none animate">
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./features.html">Features</a></li>
+        <li><a href="./price.html">Price</a></li>
+        <li><a href="./about-us.html">About Us</a></li>
+        <li><a href="./contact-us.html">Contact Us</a></li>
+      </ul>
+    </div>
 
-    <div class="banner">
-      <div class="container banner-main-container">
-        <h1>Contact Us</h1>
+    <div class="contact-page">
+      <div class="container">
+        <h1 class="contact-page-heading">Get in us today!</h1>
+        <div class="contact-page-top-container">
+          <div class="top-container">
+            <div class="d-flex gap-3 align-items-center">
+              <div class="top-icon-container">
+                <img src="" alt="" />
+              </div>
+              <strong>Mail Us</strong>
+            </div>
+            <a href="mailto:info@elab.in">info@elab.in</a>
+          </div>
+          <div class="top-container">
+            <div class="d-flex gap-3 align-items-center">
+              <div class="top-icon-container">
+                <img src="" alt="" />
+              </div>
+              <strong>Call Us</strong>
+            </div>
+            <a href="tel:+917432074320">+91 74320 74320</a>
+          </div>
+        </div>
+
+        <div class="main-form-container">
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-12 mt-5">
+              <div class="form-group">
+                <label for="your-full-name">Full Name *</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="your-full-name"
+                  placeholder="Full Name"
+                />
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-12 mt-5">
+              <div class="form-group">
+                <label for="your-full-name">Full Name *</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="your-full-name"
+                  placeholder="Full Name"
+                />
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-12 mt-5">
+              <div class="form-group">
+                <label for="your-full-name">Full Name *</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="your-full-name"
+                  placeholder="Full Name"
+                />
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-12 mt-5">
+              <div class="form-group">
+                <label for="your-full-name">Full Name *</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="your-full-name"
+                  placeholder="Full Name"
+                />
+              </div>
+            </div>
+            <div class="col-12 mt-5">
+              <div class="form-group">
+                <label for="exampleFormControlTextarea1"
+                  >Example textarea</label
+                >
+                <textarea
+                  class="form-control"
+                  id="exampleFormControlTextarea1"
+                  rows="5"
+                  placeholder="Message"
+                ></textarea>
+              </div>
+            </div>
+            <button class="form-submit-btn">Send Message</button>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -107,11 +206,11 @@
     <!-- End of .container -->
     <footer class="footer">
       <!-- <div class="scroll-top" onclick="topFunction()">
-          <img src="images/scroll-top.png" class="img-fluid d-none" alt="" />
-        </div> -->
+        <img src="images/scroll-top.png" class="img-fluid d-none" alt="" />
+      </div> -->
       <div class="container">
         <div class="row">
-          <div class="col-lg-4 f-div-1">
+          <div class="col-lg-4 col-md-6 col-sm-12 col-12 f-div-1">
             <div class="f-logo">eLab</div>
             <div class="f-text">
               Empowering laboratories with precision and efficiency. Simplify
@@ -131,7 +230,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-2 f-div-2">
+          <div class="col-lg-2 col-md-6 col-sm-12 col-12 f-div-2">
             <div class="f-heading">Pages</div>
             <ul>
               <li><a href="./price.html">Price</a></li>
@@ -143,7 +242,7 @@
               </li>
             </ul>
           </div>
-          <div class="col-lg-2 f-div-3">
+          <div class="col-lg-2 col-md-6 col-sm-12 col-12 f-div-3">
             <div class="f-heading">Company</div>
             <ul>
               <li><a href="./privacy-policy.html">Privacy Policy</a></li>
@@ -162,7 +261,7 @@
               <li><a href="./affiliate.html">Join as Reseller</a></li>
             </ul>
           </div>
-          <div class="col-lg-4 f-div-4">
+          <div class="col-lg-4 col-md-6 col-sm-12 col-12 f-div-4">
             <div class="footer-container">
               <div class="footer-container-sub-heading">Download</div>
               <div class="footer-container-heading">
@@ -174,12 +273,16 @@
               </div>
               <div class="footer-btn-container">
                 <a href="#">
-                  <div class="footer-btn-1 d-flex gap-2 align-items-center">
+                  <div
+                    class="footer-btn-1 d-flex gap-2 align-items-center justify-content-center"
+                  >
                     Install <i class="fa-solid fa-download"></i>
                   </div>
                 </a>
                 <a href="tel:+917432074320">
-                  <div class="footer-btn-2 d-flex gap-2 align-items-center">
+                  <div
+                    class="footer-btn-2 d-flex gap-2 align-items-center justify-content-center"
+                  >
                     <i class="fa-solid fa-phone"></i>+91 74320 74320
                   </div>
                 </a>
@@ -189,8 +292,8 @@
         </div>
       </div>
       <div class="container mt-5">
-        <div class="row border-top py-3">
-          <div class="col-lg-8">
+        <div class="row border-top py-3 ali">
+          <div class="col-lg-8 col-md-8 col-sm-12 col-12">
             <div class="lower-footer">
               Copyright © 2024 <b>eLab</b> by
               <a href="http://www.tru-solutions.com" target="_blank"
@@ -199,16 +302,24 @@
               - All Rights Reserved
             </div>
           </div>
-          <div class="col-lg-4 gap-4">
+          <div
+            class="col-lg-4 col-md-4 col-sm-12 col-12 d-flex gap-3 align-items-center align-items-md-start mt-3 justify-content-center"
+          >
             <span>Follow Us On: </span>
-            <a href="" target="_blank"
-              ><i class="fa-brands fa-facebook-f"></i
-            ></a>
-            <a href="" target="_blank"
-              ><i class="fa-brands fa-instagram"></i
-            ></a>
-            <a href="" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
-            <a href="" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            <div class="footer-social-media-container">
+              <a href="" target="_blank">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+              <a href="" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a href="" target="_blank">
+                <i class="fa-brands fa-whatsapp"></i>
+              </a>
+              <a href="" target="_blank">
+                <i class="fa-brands fa-youtube"></i>
+              </a>
+            </div>
           </div>
         </div>
       </div>
