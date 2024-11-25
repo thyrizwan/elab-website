@@ -60,18 +60,17 @@
   <body>
     <div class="main-header">
       <div class="container">
-        <div class="row align-items-center">
-          <div class="col-2">
-            <img src="images/logo.png" alt="" />
+        <div class="row align-items-center justify-content-between">
+          <div class="col-lg-2 col-md-4 col-sm-4 col-4">
+            <img src="images/logo.svg" alt="" />
           </div>
-          <div class="col-8 px-5">
-            <ul class="d-none d-lg-flex">
+          <div class="col-lg-8 px-5 header-link-container d-none d-lg-block">
+            <ul class="">
               <a href="./index.html"><li class="header-links">Home</li></a>
               <a href="./features.html"
                 ><li class="header-links">Features</li></a
               >
               <a href="./price.html"><li class="header-links">Price</li></a>
-              <!-- <a href="#"><li class="header-links">Blog</li></a> -->
               <a href="./about-us.html"
                 ><li class="header-links">About Us</li></a
               >
@@ -80,20 +79,48 @@
               >
             </ul>
           </div>
-          <div class="col-2">
-            <a href="#" id="download-btn" class="d-none">
-              <div class="header-btn d-flex gap-2 align-items-center">
-                Download Now <i class="fa-solid fa-download"></i>
-              </div>
-            </a>
-            <a href="tel:+917432074320" id="contact-no" class="d-block">
-              <div class="header-btn d-flex gap-2 align-items-center">
-                <i class="fa-solid fa-phone"></i> +91 74320 74320
-              </div>
-            </a>
+          <div
+            class="col-lg-2 col-md-6 col-sm-2 col-1 px-0 d-md-flex align-items-center justify-content-end gap-4"
+          >
+            <div class="header-top-btn-contraner d-none d-md-block">
+              <a href="#" id="download-btn" class="d-none">
+                <div class="header-btn d-flex gap-2 align-items-center">
+                  Download Now <i class="fa-solid fa-download"></i>
+                </div>
+              </a>
+              <a href="tel:+917432074320" id="contact-no" class="d-block">
+                <div class="header-btn d-flex gap-2 align-items-center">
+                  <i class="fa-solid fa-phone"></i> +91 74320 74320
+                </div>
+              </a>
+            </div>
+            <div class="toggle-btn d-lg-none" onclick="toggleMenu()">
+              <i class="fa-solid fa-bars fa-xl"></i>
+            </div>
           </div>
         </div>
       </div>
+    </div>
+    <div class="mobile-menu d-lg-none animate">
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./features.html">Features</a></li>
+        <li><a href="./price.html">Price</a></li>
+        <li><a href="./about-us.html">About Us</a></li>
+        <li><a href="./contact-us.html">Contact Us</a></li>
+        <li>
+          <a href="" rel="noopener noreferrer">
+            <div class="header-btn d-flex gap-2 align-items-center mb-2 content-center">
+              Download Now <i class="fa-solid fa-download"></i>
+            </div>
+          </a>
+          <a href="tel:+917432074320" rel="noopener noreferrer">
+            <div class="header-btn d-flex gap-2 align-items-center content-center">
+              <i class="fa-solid fa-phone"></i> +91 74320 74320
+            </div>
+          </a>
+        </li>
+      </ul>
     </div>
 
     <div class="banner">
